@@ -5,8 +5,8 @@ const page = () => {
     <div className='min-h-screen w-full'>
       <div>
       </div>
-      <div className='mt-12'>
-
+      <div className='mt-4'>
+        here's the page for Documents 
       </div>
     </div>
   )
