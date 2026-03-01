@@ -6,7 +6,7 @@ import Image from 'next/image';
 const HerSec = () => {
   return (
     <div className='flex flex-col items-center align-middle text-center justify-center mx-auto py-6 relative'>
-        <Image src={BlueStar} width={200} height={200} alt='BlueStar' className='-bottom-80 -left-120 relative'/>
+        <Image src={BlueStar} width={200} height={200} alt='BlueStar' className='-bottom-150 -left-160 relative'/>
         <Image src={OrangeStarBg} width={180} height={180} alt='OrangeStar' className='top-3 -right-20 absolute'/>
 
         <div className='flex items-center flex-col lg:font-6xl text-black max-w-4xl mx-auto'>
