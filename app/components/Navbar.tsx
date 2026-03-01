@@ -5,9 +5,11 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 const Navbar = () => {
   return (
-    <div className='h-auto w-full  bg-white flex justify-between shadow-md p-2 top-0 '>
+    <div className='h-auto w-full  bg-white flex justify-between shadow-md p-2 top-0 z-50 '>
       <div className='relative '>
+        <Link href={`/`}>
         <Image src={DefLogo} width={24} height={24} alt='Company Logo'/>
+        </Link>
       </div>
       <div className='flex flex-row items-center gap-2 font-medium '>
         <ul className='flex flex-row gap-4 '>
