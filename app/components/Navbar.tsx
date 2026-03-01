@@ -23,7 +23,7 @@ const Navbar = () => {
             Docs
           </li>
           </Link>
-          <Link href={'/about-us'}>
+          <Link href={'/about'}>
           <li className='text-neutral-300 hover:text-black ease-in transition-all duration-150'>
             About
           </li>

@@ -7,11 +7,11 @@ const HerSec = () => {
   return (
     <div className='flex flex-col items-center align-middle text-center justify-center mx-auto py-6 relative'>
         <Image src={BlueStar} width={200} height={200} alt='BlueStar' className='-bottom-80 -left-120 relative'/>
-        <Image src={OrangeStarBg} width={200} height={200} alt='OrangeStar' className='top-3 -right-20 absolute'/>
+        <Image src={OrangeStarBg} width={180} height={180} alt='OrangeStar' className='top-3 -right-20 absolute'/>
 
         <div className='flex items-center flex-col lg:font-6xl text-black max-w-4xl mx-auto'>
             <div className='scroll-m-20 text-center text-4xl font-bold tracking-tight text-balance'>
-                get maximum credits with
+                get maximum <span className='hover:text-green-500 duration-150 transition-all ease-in cursor-pointer'>returns</span> with
             </div>
             <div className='scroll-m-20 text-center text-4xl font-bold tracking-tight text-balance'>
                 minimum  <span className=' font-mono tracking-tighter text-blue-700'>efforts</span>
