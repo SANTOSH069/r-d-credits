@@ -39,11 +39,6 @@ export default function RootLayout({
       <html lang="en">
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
             <header className="flex justify-end items-center">
-              
-              {/* Show the user button when the user is signed in */}
-              <SignedIn>
-                <UserButton />
-              </SignedIn>
             </header>
             <Navbar/>
             {children}
