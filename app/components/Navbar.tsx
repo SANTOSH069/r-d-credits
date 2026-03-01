@@ -28,6 +28,16 @@ const Navbar = () => {
             About
           </li>
           </Link>
+          <Link href={'/faq'}>
+          <li className='text-neutral-300 hover:text-black ease-in transition-all duration-150'>
+            Tax Credit FAQ
+          </li>
+          </Link>
+          <Link href={'/about'}>
+          <li className='text-neutral-300 hover:text-black ease-in transition-all duration-150'>
+            Resources
+          </li>
+          </Link>
         </ul>
       </div>
       <Button variant={`default`}>Sign In</Button>
