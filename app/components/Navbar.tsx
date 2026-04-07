@@ -1,9 +1,11 @@
+'use client';
 import React from 'react'
 import DefLogo from '@/public/DefLogo.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { SignedIn, UserButton } from '@clerk/nextjs'
+import { useUser } from '@clerk/nextjs';
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -14,6 +16,8 @@ const navLinks = [
 ]
 
 const Navbar = () => {
+
+  const {isSignedIn} = useUser();
   return (
     <header className='sticky top-0 z-50 w-full border-b border-neutral-100 bg-white/80 backdrop-blur-md shadow-sm'>
       <nav className='mx-auto flex h-16 max-w-7xl items-center justify-between px-6 relative'>
@@ -41,14 +45,24 @@ const Navbar = () => {
           <SignedIn>
             <UserButton/>
           </SignedIn>
-          <Link href='/sign-up'>
+          
+          { !isSignedIn &&
+            <Link href='/sign-up'>
             <Button size='sm' className='text-sm font-medium'>
-              Get Started
+              Sign Up
             </Button>
-          </Link>
+            </Link> 
+          }
+          {
+            isSignedIn &&
+          <Button size='sm' className='text-sm font-medium'>
+              Docs
+          </Button>
+        }
         </div>
       </nav>
     </header>
+        
   )
 }
 
